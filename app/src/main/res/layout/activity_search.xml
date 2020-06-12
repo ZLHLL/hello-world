@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+
+    <cn.bingoogolapple.titlebar.BGATitleBar
+        android:id="@+id/title"
+        style="@style/TitleBar_Default"
+        app:bgatitlebar_titleText="为他人申诉"/>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="8.5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerInParent="true"
+                android:src="@color/colorContext"/>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/et_search"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:inputType="text"
+            android:hint="请输入姓名或学号"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorContext"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_clear"
+                android:layout_width="23dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logineipa_acount"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.5dp"
+                android:text="取消"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
